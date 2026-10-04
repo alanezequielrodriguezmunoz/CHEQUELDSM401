@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canción</title>
+    <link rel="stylesheet" href="css/general.css">
+</head>
+<script src="js/general.js"></script>
+<body class="cancion">
+
+    <main>
+
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cancion.html">Canción</a></li>
+                <li><a href="disco.html">Disco</a></li>
+                <li><a href="cantante.html">Cantante</a></li>
+                <li><a href="playlist.html">Playlist</a></li>
+            </ul>
+        </nav>
+
+        <section id="contenido">
+
+            <h1>Canción</h1>
+
+            <form>
+
+                <div class="campo">
+                    <label for="nombre">Nombre de la canción:</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+
+                <div class="campo">
+                    <label for="duracion">Duración:</label>
+                    <input type="text" id="duracion" name="duracion">
+                </div>
+
+                <div class="campo">
+                    <label for="compositor">Compositor:</label>
+                    <input type="text" id="compositor" name="compositor">
+                </div>
+
+                <div class="campo">
+                    <label for="cantante">Cantante:</label>
+                    <select id="cantante" name="cantante">
+                        <option value="">Selecciona un cantante</option>
+                        <option value="bruno">Bruno Mars</option>
+                        <option value="the_weeknd">Caifanes</option>
+                        <option value="taylor">Enrique Bunbury</option>
+                    </select>
+                </div>
+
+                <div class="boton">
+                    <button type="submit">Guardar</button>
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <article class="pie">
+            <p>LDSM401</p>
+        </article>
+
+        <article class="pie">
+        </article>
+
+        <article class="pie">
+            <p>Alan Ezequiel Rodriguez Muñoz</p>
+        </article>
+
+    </footer>
+
+</body>
+</html>

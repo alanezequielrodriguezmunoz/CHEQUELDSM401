@@ -1,0 +1,348 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    padding:20px;
+    color:white;
+}
+
+body.cancion{
+    background-color:#332209;
+}
+
+body.disco{
+    background-color:#000000;
+}
+
+body.cantante{
+    background-color:#b87692;
+}
+
+body.index{
+    background-color:#361414;
+}
+
+body.playlist{
+    background-color:#013241;
+}
+
+main{
+    display:flex;
+}
+
+body.cancion main,
+body.cantante main,
+body.index main,
+body.playlist main{
+    border:2px solid black;
+}
+
+body.disco main{
+    border:2px solid rgb(236, 228, 228);
+}
+
+#menu{
+    width:20%;
+    padding:20px;
+    color:white;
+}
+
+body.cancion #menu,
+body.cantante #menu,
+body.index #menu,
+body.playlist #menu{
+    border-right:2px solid black;
+}
+
+body.disco #menu{
+    border-right:2px solid rgb(235, 229, 229);
+}
+
+#menu li{
+    margin:20px;
+}
+
+#menu a{
+    color:white;
+    text-decoration:none;
+}
+
+#contenido{
+    width:80%;
+    color:white;
+}
+
+body.cancion #contenido,
+body.disco #contenido,
+body.cantante #contenido,
+body.playlist #contenido{
+    padding:30px;
+}
+
+body.index #contenido{
+    padding:10px;
+}
+
+#contenido h1{
+    margin-bottom:25px;
+}
+
+form{
+    width:70%;
+}
+
+body.disco #formulario{
+    display:flex;
+    width:100%;
+}
+
+body.disco form{
+    width:60%;
+    padding-right:30px;
+}
+
+body.cantante #formulario{
+    display:flex;
+    width:100%;
+}
+
+body.cantante form{
+    width:60%;
+    padding-right:30px;
+}
+
+.campo{
+    margin-bottom:20px;
+}
+
+.campo label{
+    display:block;
+    margin-bottom:8px;
+}
+
+body.cancion .campo input,
+body.cancion .campo select,
+body.playlist .campo input,
+body.playlist .campo select{
+    width:100%;
+    padding:10px;
+    border:2px solid black;
+}
+
+body.disco .campo input[type="text"]{
+    width:100%;
+    padding:10px;
+    border:2px solid rgb(255, 250, 250);
+}
+
+body.disco .campo input[type="file"]{
+    width:100%;
+    padding:10px;
+    border:2px solid rgb(255, 250, 250);
+    color:white;
+}
+
+body.cantante .campo input[type="text"],
+body.cantante .campo input[type="number"],
+body.cantante .campo textarea{
+    width:100%;
+    padding:10px;
+    border:2px solid black;
+}
+
+body.cantante .campo textarea{
+    height:80px;
+}
+
+.campo input[type="radio"]{
+    margin-right:5px;
+}
+
+.campo input[type="radio"] + label{
+    display:inline;
+    margin-right:15px;
+}
+
+body.disco .foto{
+    width:250px;
+    height:250px;
+    border:2px solid rgb(255, 255, 255);
+    background-color:white;
+    margin-left:20px;
+}
+
+body.cantante .foto{
+    width:250px;
+    height:250px;
+    border:2px solid black;
+    background-color:white;
+    margin-left:20px;
+}
+
+.foto img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+
+.boton{
+    margin-top:25px;
+}
+
+body.cancion .boton button,
+body.cantante .boton button,
+body.playlist .boton button{
+    padding:10px 20px;
+    border:2px solid black;
+}
+
+body.disco .boton button{
+    padding:10px 20px;
+    border:2px solid rgb(255, 255, 255);
+}
+
+body.index .renglon{
+    display:flex;
+    margin-bottom:10px;
+}
+
+body.index .cuadro{
+    width:25%;
+    aspect-ratio:1 / 1;
+    border:2px solid black;
+    margin:5px;
+    padding:20px;
+    text-align:center;
+    color:white;
+}
+
+.imagen_css{
+    background-image:url("../img/login.jpeg");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:white;
+}
+
+.gradiente_abajo{
+    background:linear-gradient(white,gray);
+}
+
+.gradiente_arriba{
+    background:linear-gradient(gray,white);
+}
+
+.gradiente_derecha{
+    background:linear-gradient(to right,white,gray);
+}
+
+.gradiente_izquierda{
+    background:linear-gradient(to left,white,gray);
+}
+
+.cuadro img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+
+.solo_imagen{
+    padding:0;
+}
+
+body.index #renglon{
+    display:flex;
+    margin-top:10px;
+}
+
+#lista{
+    width:30%;
+    height:180px;
+    border:2px solid black;
+    margin:5px;
+    padding:15px;
+    color:white;
+}
+
+.iconos{
+    margin-bottom:5px;
+}
+
+#combinado{
+    display:flex;
+    width:40%;
+    height:180px;
+    border:2px solid black;
+    margin:5px;
+}
+
+#igual{
+    width:50%;
+    height:100%;
+    padding:10px;
+    text-align:center;
+    font-size:14px;
+    border-right:2px solid black;
+    color:white;
+}
+
+#r{
+    width:50%;
+    height:100%;
+}
+
+#r img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+
+#imagen_grande{
+    width:25%;
+    height:180px;
+    border:2px solid black;
+    margin:5px;
+    background-image:url("../img/login.jpeg");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:white;
+}
+
+footer{
+    display:flex;
+    margin-top:10px;
+    color:white;
+}
+
+body.cancion footer,
+body.cantante footer,
+body.index footer,
+body.playlist footer{
+    border:2px solid black;
+}
+
+body.disco footer{
+    border:2px solid rgb(255, 248, 248);
+}
+
+.pie{
+    width:33.33%;
+    padding:20px;
+    text-align:center;
+    color:white;
+}
+
+body.cancion .pie,
+body.cantante .pie,
+body.index .pie,
+body.playlist .pie{
+    border-right:2px solid black;
+}
+
+body.disco .pie{
+    border-right:2px solid rgb(255, 255, 255);
+}
