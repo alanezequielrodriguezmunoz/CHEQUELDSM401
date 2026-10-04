@@ -1,0 +1,128 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    background-color:#EDE8D0;
+    padding:20px;
+}
+/* MENU */
+main{
+    display:flex;
+    border:2px solid black;
+}
+#menu{
+    width:20%;
+    padding:20px;
+    border-right:2px solid black;
+}
+#menu li{
+    margin:20px;
+}
+/* CONTENIDO */
+#contenido{
+    width:80%;
+    padding:10px;
+}
+/* FILAS */
+.renglon{
+    display:flex;
+    margin-bottom:10px;
+}
+.cuadro{
+    width:25%;
+    height:120px;
+    border:2px solid black;
+    margin:5px;
+    padding:20px;
+    text-align:center;
+}
+/* IMAGEN CSS */
+.imagen_css{
+    background-image:url("../img/login.jpg");
+    background-size:cover;
+    background-position:center;
+}
+/* GRADIENTES */
+.gradiente_abajo{
+    background:linear-gradient(white,gray);
+}
+.gradiente_arriba{
+    background:linear-gradient(gray,white);
+}
+.gradiente_derecha{
+    background:linear-gradient(to right,white,gray);
+}
+.gradiente_izquierda{
+    background:linear-gradient(to left,white,gray);
+}
+/* IMAGENES */
+.cuadro img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.solo_imagen{
+    padding:0;
+}
+/* PARTE DE ABAJO */
+#renglon{
+    display:flex;
+    margin-top:10px;
+}
+#lista{
+    width:30%;
+    height:180px;
+    border:2px solid black;
+    margin:5px;
+    padding:15px;
+}
+.iconos{
+    margin-bottom:5px;
+}
+#combinado{
+    display:flex;
+    width:40%;
+    height:180px;
+    border:2px solid black;
+    margin:5px;
+}
+#igual{
+    width:50%;
+    height:100%;
+    padding:10px;
+    text-align:center;
+    font-size:14px;
+    border-right:2px solid black;
+}
+#r{
+    width:50%;
+    height:100%;
+}
+#r img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+#imagen_grande{
+    width:25%;
+    height:180px;
+    border:2px solid black;
+    margin:5px;
+    background-image:url("../img/login.jpg");
+    background-size:cover;
+    background-position:center;
+}
+/* FOOTER */
+footer{
+    display:flex;
+    border:2px solid black;
+    margin-top:10px;
+}
+.pie{
+    width:33.33%;
+    padding:20px;
+    text-align:center;
+    border-right:2px solid black;
+}
