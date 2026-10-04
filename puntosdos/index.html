@@ -1,30 +1,151 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Prácticas de Desarrollo Web</title>
+    <meta charset="UTF-8">
+    <title>Mi página</title>
+
+    <link rel="stylesheet" href="css/general.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="img/login.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 </head>
-<body>
-<header>
-<h1>Bitácora de Prácticas</h1>
-<p>Bienvenido al repositorio de prácticas.</p>
-</header>
 
-<section>
-<h1>Unidad 2</h1>
-<article>
-<p><a href="actividad1/puntos/index.html">Práctica 1</a></p>
-</article>
-</section>
+<body class="index">
 
-<section>
-<h1>Unidad 3</h1>
-<article><p>Aun sin contenido</p></article>
-</section>
+    <main>
 
-<footer>
-<h3>Anahi Torres Tinoco</h3>
-<h5>antorres@utleon.edu.mx</h5>
-</footer>
+        <aside id="menu">
+
+            <h3>Menú</h3>
+
+            <nav>
+                <ol>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+
+                    <li>
+                        <a href="disco.html">Disco</a>
+                    </li>
+
+                    <li>
+                        <a href="cantante.html">Cantante</a>
+                    </li>
+
+                    <li>
+                        <a href="cancion.html">Canción</a>
+                    </li>
+
+                    <li>
+                        <a href="playlist.html">Playlist</a>
+                    </li>
+                </ol>
+            </nav>
+
+        </aside>
+
+        <section id="contenido">
+
+            <div class="renglon">
+
+                <article class="cuadro imagen_css"></article>
+
+                <article class="cuadro gradiente_abajo"></article>
+
+                <article class="cuadro gradiente_arriba"></article>
+
+                <article class="cuadro gradiente_derecha"></article>
+
+            </div>
+
+            <div class="renglon">
+
+                <article class="cuadro gradiente_izquierda"></article>
+
+                <article class="cuadro solo_imagen">
+                    <img src="img/bun.jpg" alt="Disco">
+                </article>
+
+                <article class="cuadro">
+                    <img src="img/bunb.jpg" alt="Cantante">
+                </article>
+
+                <article class="cuadro">
+                    <img src="img/login.jpeg" alt="Imagen">
+                </article>
+
+            </div>
+
+            <div id="renglon">
+
+                <article id="lista">
+
+                    <div class="iconos">
+                        <span class="material-symbols-outlined">
+                            music_note
+                        </span>
+                    </div>
+
+                    <div class="iconos">
+                        <span class="material-symbols-outlined">
+                            album
+                        </span>
+                    </div>
+
+                    <div class="iconos">
+                        <span class="material-symbols-outlined">
+                            mic
+                        </span>
+                    </div>
+
+                    <div class="iconos">
+                        <span class="material-symbols-outlined">
+                            playlist_play
+                        </span>
+                    </div>
+
+                </article>
+
+                <article id="combinado">
+
+                    <div id="igual">
+                        <p>Música</p>
+                    </div>
+
+                    <div id="r">
+                        <img src="img/bun.jpg" alt="Disco">
+                    </div>
+
+                </article>
+
+                <article id="imagen_grande"></article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <article class="pie">
+            <p>LDSM401</p>
+        </article>
+
+        <article class="pie">
+        </article>
+
+        <article class="pie">
+            <p>Alan Ezequiel Rodriguez Muñoz</p>
+        </article>
+
+    </footer>
+
 </body>
 </html>
