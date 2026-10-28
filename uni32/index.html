@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pago por puesto</title>
+</head>
+<body>
+    <h1>Pago por puesto</h1>
+    Puesto
+    <select id="puesto">
+        <option>Diseñador</option>
+        <option>Programador</option>
+        <option>Líder</option>
+    </select>
+    <br><br>
+    Nivel
+    <select id="nivel">
+        <option>Newby</option>
+        <option>Jr</option>
+        <option>Sr</option>
+    </select>
+    <br><br>
+    Horas
+    <input type="number" id="horas" value="40">
+    <br><br>
+    <button onclick="calcular()">Calcular</button>
+    <br><br>
+    Total
+    <input type="text" id="total" value="$" readonly>
+    <script src="js/arreglos.js"></script>
+</body>
+</html>
