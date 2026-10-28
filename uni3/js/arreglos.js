@@ -1,20 +1,11 @@
- 
-function muerte() {
-    arreglo = new Array(7);
-    suma = 0;
-    for (let i = 0; i < 7; i++) {
-        let numero = prompt("Captura un número");
-        arreglo[i] = parseFloat(numero);
-        suma += arreglo[i];
+function letraE() {
+    let anchos = [4, 1, 4, 1, 4];
+    let dibujo = "";
+    for (let fila = 0; fila < anchos.length; fila++) {
+        for (let col = 0; col < anchos[fila]; col++) {
+            dibujo += "X ";
+        }
+        dibujo += "\n";
     }
-    alert("Números capturados: " + arreglo);
-    alert("Suma: " + suma);
-    let minimo = Math.min(...arreglo);
-    let maximo = Math.max(...arreglo);
-    alert("Mínimo: " + minimo);
-    alert("Máximo: " + maximo);
-    alert("Promedio: " + (suma / 7));
+    document.getElementById("salida").innerHTML = dibujo;
 }
- 
-
- 
