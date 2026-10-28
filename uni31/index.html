@@ -1,13 +1,87 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Alumnos</title>
+    <title>Agenda</title>
 </head>
 <body>
-    <h1>Capturar alumnos</h1>
-    <button onclick="alumnos()">Capturar alumnos</button>
+
+    <h1>Agenda</h1>
+
+    <table border="1" cellpadding="5">
+        <tr>
+            <th>Día</th>
+            <th>Hr</th>
+            <th>Evento</th>
+            <th>Desc</th>
+        </tr>
+        <tr>
+            <td>Lunes</td>
+            <td id="hr0"></td>
+            <td id="evento0"></td>
+            <td id="desc0"></td>
+        </tr>
+        <tr>
+            <td>Martes</td>
+            <td id="hr1"></td>
+            <td id="evento1"></td>
+            <td id="desc1"></td>
+        </tr>
+        <tr>
+            <td>Miércoles</td>
+            <td id="hr2"></td>
+            <td id="evento2"></td>
+            <td id="desc2"></td>
+        </tr>
+        <tr>
+            <td>Jueves</td>
+            <td id="hr3"></td>
+            <td id="evento3"></td>
+            <td id="desc3"></td>
+        </tr>
+        <tr>
+            <td>Viernes</td>
+            <td id="hr4"></td>
+            <td id="evento4"></td>
+            <td id="desc4"></td>
+        </tr>
+        <tr>
+            <td>Sábado</td>
+            <td id="hr5"></td>
+            <td id="evento5"></td>
+            <td id="desc5"></td>
+        </tr>
+        <tr>
+            <td>Domingo</td>
+            <td id="hr6"></td>
+            <td id="evento6"></td>
+            <td id="desc6"></td>
+        </tr>
+    </table>
+    <br>
+    Día
+    <select id="dia">
+        <option>Lunes</option>
+        <option>Martes</option>
+        <option>Miércoles</option>
+        <option>Jueves</option>
+        <option>Viernes</option>
+        <option>Sábado</option>
+        <option>Domingo</option>
+    </select>
+    <br><br>
+
+    Hr
+    <input type="text" id="hr" value="5:00 pm">
+    <br><br>
+    Evento
+    <input type="text" id="evento">
+    <br><br>
+    Desc.
+    <br>
+    <textarea id="desc" rows="4" cols="30"></textarea>
+    <br><br>
+    <button onclick="guardar()">Guardar</button>
     <script src="js/arreglos.js"></script>
 </body>
 </html>
