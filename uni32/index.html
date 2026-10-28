@@ -5,7 +5,38 @@
     <title>Pago por puesto</title>
 </head>
 <body>
+
     <h1>Pago por puesto</h1>
+
+    <h3>Tabla de sueldos por hora</h3>
+    <table border="1" cellpadding="5">
+        <tr>
+            <th>Puesto</th>
+            <th>Newby</th>
+            <th>Jr</th>
+            <th>Sr</th>
+        </tr>
+        <tr>
+            <td>Diseñador</td>
+            <td>$120</td>
+            <td>$140</td>
+            <td>$180</td>
+        </tr>
+        <tr>
+            <td>Programador</td>
+            <td>$120</td>
+            <td>$240</td>
+            <td>$310</td>
+        </tr>
+        <tr>
+            <td>Líder</td>
+            <td>$240</td>
+            <td>$520</td>
+            <td>$890</td>
+        </tr>
+    </table>
+    <br>
+
     Puesto
     <select id="puesto">
         <option>Diseñador</option>
@@ -13,6 +44,7 @@
         <option>Líder</option>
     </select>
     <br><br>
+
     Nivel
     <select id="nivel">
         <option>Newby</option>
@@ -20,13 +52,13 @@
         <option>Sr</option>
     </select>
     <br><br>
-    Horas
+    Hrs
     <input type="number" id="horas" value="40">
     <br><br>
     <button onclick="calcular()">Calcular</button>
     <br><br>
     Total
     <input type="text" id="total" value="$" readonly>
-    <script src="js/arreglos.js"></script>
+    <script src="arreglos.js"></script>
 </body>
 </html>
